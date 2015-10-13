@@ -1,0 +1,337 @@
+                                      1 ;--------------------------------------------------------
+                                      2 ; File Created by SDCC : free open source ANSI-C Compiler
+                                      3 ; Version 3.4.0 #8981 (Sep 26 2015) (Mac OS X x86_64)
+                                      4 ; This file was generated Tue Oct 13 14:47:16 2015
+                                      5 ;--------------------------------------------------------
+                                      6 	.module stm8l10x_spi
+                                      7 	.optsdcc -mstm8
+                                      8 	
+                                      9 ;--------------------------------------------------------
+                                     10 ; Public variables in this module
+                                     11 ;--------------------------------------------------------
+                                     12 	.globl _SPI_DeInit
+                                     13 	.globl _SPI_Init
+                                     14 	.globl _SPI_Cmd
+                                     15 	.globl _SPI_ITConfig
+                                     16 	.globl _SPI_SendData
+                                     17 	.globl _SPI_ReceiveData
+                                     18 	.globl _SPI_NSSInternalSoftwareCmd
+                                     19 	.globl _SPI_BiDirectionalLineConfig
+                                     20 	.globl _SPI_GetFlagStatus
+                                     21 	.globl _SPI_ClearFlag
+                                     22 	.globl _SPI_GetITStatus
+                                     23 	.globl _SPI_ClearITPendingBit
+                                     24 ;--------------------------------------------------------
+                                     25 ; ram data
+                                     26 ;--------------------------------------------------------
+                                     27 	.area DATA
+                                     28 ;--------------------------------------------------------
+                                     29 ; ram data
+                                     30 ;--------------------------------------------------------
+                                     31 	.area INITIALIZED
+                                     32 ;--------------------------------------------------------
+                                     33 ; absolute external ram data
+                                     34 ;--------------------------------------------------------
+                                     35 	.area DABS (ABS)
+                                     36 ;--------------------------------------------------------
+                                     37 ; global & static initialisations
+                                     38 ;--------------------------------------------------------
+                                     39 	.area HOME
+                                     40 	.area GSINIT
+                                     41 	.area GSFINAL
+                                     42 	.area GSINIT
+                                     43 ;--------------------------------------------------------
+                                     44 ; Home
+                                     45 ;--------------------------------------------------------
+                                     46 	.area HOME
+                                     47 	.area HOME
+                                     48 ;--------------------------------------------------------
+                                     49 ; code
+                                     50 ;--------------------------------------------------------
+                                     51 	.area CODE
+                                     52 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 55: void SPI_DeInit(void)
+                                     53 ;	-----------------------------------------
+                                     54 ;	 function SPI_DeInit
+                                     55 ;	-----------------------------------------
+      000000                         56 _SPI_DeInit:
+                                     57 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 57: SPI->CR1 = SPI_CR1_RESET_VALUE;
+      000000 AE 52 00         [ 2]   58 	ldw	x, #0x5200
+      000003 7F               [ 1]   59 	clr	(x)
+                                     60 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 58: SPI->CR2 = SPI_CR2_RESET_VALUE;
+      000004 AE 52 01         [ 2]   61 	ldw	x, #0x5201
+      000007 7F               [ 1]   62 	clr	(x)
+                                     63 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 59: SPI->ICR = SPI_ICR_RESET_VALUE;
+      000008 AE 52 02         [ 2]   64 	ldw	x, #0x5202
+      00000B 7F               [ 1]   65 	clr	(x)
+                                     66 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 60: SPI->SR = SPI_SR_RESET_VALUE;
+      00000C AE 52 03         [ 2]   67 	ldw	x, #0x5203
+      00000F A6 02            [ 1]   68 	ld	a, #0x02
+      000011 F7               [ 1]   69 	ld	(x), a
+      000012 81               [ 4]   70 	ret
+                                     71 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 103: void SPI_Init(SPI_FirstBit_TypeDef SPI_FirstBit, SPI_BaudRatePrescaler_TypeDef SPI_BaudRatePrescaler,
+                                     72 ;	-----------------------------------------
+                                     73 ;	 function SPI_Init
+                                     74 ;	-----------------------------------------
+      000013                         75 _SPI_Init:
+                                     76 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 119: (uint8_t)(SPI_BaudRatePrescaler) |
+      000013 7B 03            [ 1]   77 	ld	a, (0x03, sp)
+      000015 1A 04            [ 1]   78 	or	a, (0x04, sp)
+                                     79 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 120: (uint8_t)(SPI_CPOL) |
+      000017 1A 06            [ 1]   80 	or	a, (0x06, sp)
+                                     81 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 121: (uint8_t)(SPI_CPHA));
+      000019 1A 07            [ 1]   82 	or	a, (0x07, sp)
+      00001B AE 52 00         [ 2]   83 	ldw	x, #0x5200
+      00001E F7               [ 1]   84 	ld	(x), a
+                                     85 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 124: SPI->CR2 = (uint8_t)((uint8_t)(SPI_DirectionMode) | (uint8_t)(SPI_NSS));
+      00001F 7B 08            [ 1]   86 	ld	a, (0x08, sp)
+      000021 1A 09            [ 1]   87 	or	a, (0x09, sp)
+      000023 AE 52 01         [ 2]   88 	ldw	x, #0x5201
+      000026 F7               [ 1]   89 	ld	(x), a
+                                     90 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 126: if (SPI_Mode == SPI_Mode_Master)
+      000027 7B 05            [ 1]   91 	ld	a, (0x05, sp)
+      000029 A1 04            [ 1]   92 	cp	a, #0x04
+      00002B 26 09            [ 1]   93 	jrne	00102$
+                                     94 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 128: SPI->CR2 |= (uint8_t)SPI_CR2_SSI;
+      00002D AE 52 01         [ 2]   95 	ldw	x, #0x5201
+      000030 F6               [ 1]   96 	ld	a, (x)
+      000031 AA 01            [ 1]   97 	or	a, #0x01
+      000033 F7               [ 1]   98 	ld	(x), a
+      000034 20 04            [ 2]   99 	jra	00103$
+      000036                        100 00102$:
+                                    101 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 132: SPI->CR2 &= (uint8_t)~(SPI_CR2_SSI);
+      000036 72 11 52 01      [ 1]  102 	bres	0x5201, #0
+      00003A                        103 00103$:
+                                    104 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 136: SPI->CR1 |= (uint8_t)(SPI_Mode);
+      00003A AE 52 00         [ 2]  105 	ldw	x, #0x5200
+      00003D F6               [ 1]  106 	ld	a, (x)
+      00003E 1A 05            [ 1]  107 	or	a, (0x05, sp)
+      000040 AE 52 00         [ 2]  108 	ldw	x, #0x5200
+      000043 F7               [ 1]  109 	ld	(x), a
+      000044 81               [ 4]  110 	ret
+                                    111 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 145: void SPI_Cmd(FunctionalState NewState)
+                                    112 ;	-----------------------------------------
+                                    113 ;	 function SPI_Cmd
+                                    114 ;	-----------------------------------------
+      000045                        115 _SPI_Cmd:
+                                    116 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 151: if (NewState != DISABLE)
+      000045 0D 03            [ 1]  117 	tnz	(0x03, sp)
+      000047 27 09            [ 1]  118 	jreq	00102$
+                                    119 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 153: SPI->CR1 |= SPI_CR1_SPE; /* Enable the SPI peripheral */
+      000049 AE 52 00         [ 2]  120 	ldw	x, #0x5200
+      00004C F6               [ 1]  121 	ld	a, (x)
+      00004D AA 40            [ 1]  122 	or	a, #0x40
+      00004F F7               [ 1]  123 	ld	(x), a
+      000050 20 07            [ 2]  124 	jra	00104$
+      000052                        125 00102$:
+                                    126 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 157: SPI->CR1 &= (uint8_t)(~SPI_CR1_SPE); /* Disable the SPI peripheral */
+      000052 AE 52 00         [ 2]  127 	ldw	x, #0x5200
+      000055 F6               [ 1]  128 	ld	a, (x)
+      000056 A4 BF            [ 1]  129 	and	a, #0xbf
+      000058 F7               [ 1]  130 	ld	(x), a
+      000059                        131 00104$:
+      000059 81               [ 4]  132 	ret
+                                    133 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 174: void SPI_ITConfig(SPI_IT_TypeDef SPI_IT, FunctionalState NewState)
+                                    134 ;	-----------------------------------------
+                                    135 ;	 function SPI_ITConfig
+                                    136 ;	-----------------------------------------
+      00005A                        137 _SPI_ITConfig:
+      00005A 52 02            [ 2]  138 	sub	sp, #2
+                                    139 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 182: itpos = (uint8_t)((uint8_t)1 << (uint8_t)((uint8_t)SPI_IT & (uint8_t)0x0F));
+      00005C 7B 05            [ 1]  140 	ld	a, (0x05, sp)
+      00005E A4 0F            [ 1]  141 	and	a, #0x0f
+      000060 95               [ 1]  142 	ld	xh, a
+      000061 A6 01            [ 1]  143 	ld	a, #0x01
+      000063 6B 01            [ 1]  144 	ld	(0x01, sp), a
+      000065 9E               [ 1]  145 	ld	a, xh
+      000066 4D               [ 1]  146 	tnz	a
+      000067 27 05            [ 1]  147 	jreq	00111$
+      000069                        148 00110$:
+      000069 08 01            [ 1]  149 	sll	(0x01, sp)
+      00006B 4A               [ 1]  150 	dec	a
+      00006C 26 FB            [ 1]  151 	jrne	00110$
+      00006E                        152 00111$:
+                                    153 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 184: if (NewState != DISABLE)
+      00006E 0D 06            [ 1]  154 	tnz	(0x06, sp)
+      000070 27 0C            [ 1]  155 	jreq	00102$
+                                    156 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 186: SPI->ICR |= itpos; /* Enable interrupt*/
+      000072 AE 52 02         [ 2]  157 	ldw	x, #0x5202
+      000075 F6               [ 1]  158 	ld	a, (x)
+      000076 1A 01            [ 1]  159 	or	a, (0x01, sp)
+      000078 AE 52 02         [ 2]  160 	ldw	x, #0x5202
+      00007B F7               [ 1]  161 	ld	(x), a
+      00007C 20 0F            [ 2]  162 	jra	00104$
+      00007E                        163 00102$:
+                                    164 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 190: SPI->ICR &= (uint8_t)(~itpos); /* Disable interrupt*/
+      00007E AE 52 02         [ 2]  165 	ldw	x, #0x5202
+      000081 F6               [ 1]  166 	ld	a, (x)
+      000082 6B 02            [ 1]  167 	ld	(0x02, sp), a
+      000084 7B 01            [ 1]  168 	ld	a, (0x01, sp)
+      000086 43               [ 1]  169 	cpl	a
+      000087 14 02            [ 1]  170 	and	a, (0x02, sp)
+      000089 AE 52 02         [ 2]  171 	ldw	x, #0x5202
+      00008C F7               [ 1]  172 	ld	(x), a
+      00008D                        173 00104$:
+      00008D 5B 02            [ 2]  174 	addw	sp, #2
+      00008F 81               [ 4]  175 	ret
+                                    176 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 199: void SPI_SendData(uint8_t Data)
+                                    177 ;	-----------------------------------------
+                                    178 ;	 function SPI_SendData
+                                    179 ;	-----------------------------------------
+      000090                        180 _SPI_SendData:
+                                    181 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 201: SPI->DR = Data; /* Write in the DR register the data to be sent*/
+      000090 AE 52 04         [ 2]  182 	ldw	x, #0x5204
+      000093 7B 03            [ 1]  183 	ld	a, (0x03, sp)
+      000095 F7               [ 1]  184 	ld	(x), a
+      000096 81               [ 4]  185 	ret
+                                    186 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 209: uint8_t SPI_ReceiveData(void)
+                                    187 ;	-----------------------------------------
+                                    188 ;	 function SPI_ReceiveData
+                                    189 ;	-----------------------------------------
+      000097                        190 _SPI_ReceiveData:
+                                    191 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 211: return ((uint8_t)SPI->DR); /* Return the data in the DR register */
+      000097 AE 52 04         [ 2]  192 	ldw	x, #0x5204
+      00009A F6               [ 1]  193 	ld	a, (x)
+      00009B 81               [ 4]  194 	ret
+                                    195 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 221: void SPI_NSSInternalSoftwareCmd(FunctionalState NewState)
+                                    196 ;	-----------------------------------------
+                                    197 ;	 function SPI_NSSInternalSoftwareCmd
+                                    198 ;	-----------------------------------------
+      00009C                        199 _SPI_NSSInternalSoftwareCmd:
+                                    200 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 227: if (NewState != DISABLE)
+      00009C 0D 03            [ 1]  201 	tnz	(0x03, sp)
+      00009E 27 09            [ 1]  202 	jreq	00102$
+                                    203 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 229: SPI->CR2 |= SPI_CR2_SSI; /* Set NSS pin internally by software */
+      0000A0 AE 52 01         [ 2]  204 	ldw	x, #0x5201
+      0000A3 F6               [ 1]  205 	ld	a, (x)
+      0000A4 AA 01            [ 1]  206 	or	a, #0x01
+      0000A6 F7               [ 1]  207 	ld	(x), a
+      0000A7 20 04            [ 2]  208 	jra	00104$
+      0000A9                        209 00102$:
+                                    210 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 233: SPI->CR2 &= (uint8_t)(~SPI_CR2_SSI); /* Reset NSS pin internally by software */
+      0000A9 72 11 52 01      [ 1]  211 	bres	0x5201, #0
+      0000AD                        212 00104$:
+      0000AD 81               [ 4]  213 	ret
+                                    214 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 246: void SPI_BiDirectionalLineConfig(SPI_Direction_TypeDef SPI_Direction)
+                                    215 ;	-----------------------------------------
+                                    216 ;	 function SPI_BiDirectionalLineConfig
+                                    217 ;	-----------------------------------------
+      0000AE                        218 _SPI_BiDirectionalLineConfig:
+                                    219 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 251: if (SPI_Direction != SPI_Direction_Rx)
+      0000AE 0D 03            [ 1]  220 	tnz	(0x03, sp)
+      0000B0 27 09            [ 1]  221 	jreq	00102$
+                                    222 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 253: SPI->CR2 |= SPI_CR2_BDOE; /* Set the Tx only mode*/
+      0000B2 AE 52 01         [ 2]  223 	ldw	x, #0x5201
+      0000B5 F6               [ 1]  224 	ld	a, (x)
+      0000B6 AA 40            [ 1]  225 	or	a, #0x40
+      0000B8 F7               [ 1]  226 	ld	(x), a
+      0000B9 20 07            [ 2]  227 	jra	00104$
+      0000BB                        228 00102$:
+                                    229 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 257: SPI->CR2 &= (uint8_t)(~SPI_CR2_BDOE); /* Set the Rx only mode*/
+      0000BB AE 52 01         [ 2]  230 	ldw	x, #0x5201
+      0000BE F6               [ 1]  231 	ld	a, (x)
+      0000BF A4 BF            [ 1]  232 	and	a, #0xbf
+      0000C1 F7               [ 1]  233 	ld	(x), a
+      0000C2                        234 00104$:
+      0000C2 81               [ 4]  235 	ret
+                                    236 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 275: FlagStatus SPI_GetFlagStatus(SPI_FLAG_TypeDef SPI_FLAG)
+                                    237 ;	-----------------------------------------
+                                    238 ;	 function SPI_GetFlagStatus
+                                    239 ;	-----------------------------------------
+      0000C3                        240 _SPI_GetFlagStatus:
+                                    241 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 282: if ((SPI->SR & (uint8_t)SPI_FLAG) != (uint8_t)RESET)
+      0000C3 AE 52 03         [ 2]  242 	ldw	x, #0x5203
+      0000C6 F6               [ 1]  243 	ld	a, (x)
+      0000C7 14 03            [ 1]  244 	and	a, (0x03, sp)
+      0000C9 4D               [ 1]  245 	tnz	a
+      0000CA 27 04            [ 1]  246 	jreq	00102$
+                                    247 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 284: status = SET; /* SPI_FLAG is set */
+      0000CC A6 01            [ 1]  248 	ld	a, #0x01
+      0000CE 20 01            [ 2]  249 	jra	00103$
+      0000D0                        250 00102$:
+                                    251 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 288: status = RESET; /* SPI_FLAG is reset*/
+      0000D0 4F               [ 1]  252 	clr	a
+      0000D1                        253 00103$:
+                                    254 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 292: return status;
+      0000D1 81               [ 4]  255 	ret
+                                    256 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 306: void SPI_ClearFlag(void)
+                                    257 ;	-----------------------------------------
+                                    258 ;	 function SPI_ClearFlag
+                                    259 ;	-----------------------------------------
+      0000D2                        260 _SPI_ClearFlag:
+                                    261 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 309: SPI->SR = (uint8_t)(~SPI_SR_WKUP);
+      0000D2 AE 52 03         [ 2]  262 	ldw	x, #0x5203
+      0000D5 A6 F7            [ 1]  263 	ld	a, #0xf7
+      0000D7 F7               [ 1]  264 	ld	(x), a
+      0000D8 81               [ 4]  265 	ret
+                                    266 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 323: ITStatus SPI_GetITStatus(SPI_IT_TypeDef SPI_IT)
+                                    267 ;	-----------------------------------------
+                                    268 ;	 function SPI_GetITStatus
+                                    269 ;	-----------------------------------------
+      0000D9                        270 _SPI_GetITStatus:
+      0000D9 52 03            [ 2]  271 	sub	sp, #3
+                                    272 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 332: itpos = (uint8_t)((uint8_t)1 << ((uint8_t)SPI_IT & (uint8_t)0x0F));
+      0000DB 7B 06            [ 1]  273 	ld	a, (0x06, sp)
+      0000DD A4 0F            [ 1]  274 	and	a, #0x0f
+      0000DF 95               [ 1]  275 	ld	xh, a
+      0000E0 A6 01            [ 1]  276 	ld	a, #0x01
+      0000E2 6B 03            [ 1]  277 	ld	(0x03, sp), a
+      0000E4 9E               [ 1]  278 	ld	a, xh
+      0000E5 4D               [ 1]  279 	tnz	a
+      0000E6 27 05            [ 1]  280 	jreq	00116$
+      0000E8                        281 00115$:
+      0000E8 08 03            [ 1]  282 	sll	(0x03, sp)
+      0000EA 4A               [ 1]  283 	dec	a
+      0000EB 26 FB            [ 1]  284 	jrne	00115$
+      0000ED                        285 00116$:
+                                    286 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 335: itmask1 = (uint8_t)((uint8_t)SPI_IT >> (uint8_t)4);
+      0000ED 7B 06            [ 1]  287 	ld	a, (0x06, sp)
+      0000EF 4E               [ 1]  288 	swap	a
+      0000F0 A4 0F            [ 1]  289 	and	a, #0x0f
+      0000F2 95               [ 1]  290 	ld	xh, a
+                                    291 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 337: itmask2 = (uint8_t)((uint8_t)1 << itmask1);
+      0000F3 A6 01            [ 1]  292 	ld	a, #0x01
+      0000F5 6B 02            [ 1]  293 	ld	(0x02, sp), a
+      0000F7 9E               [ 1]  294 	ld	a, xh
+      0000F8 4D               [ 1]  295 	tnz	a
+      0000F9 27 05            [ 1]  296 	jreq	00118$
+      0000FB                        297 00117$:
+      0000FB 08 02            [ 1]  298 	sll	(0x02, sp)
+      0000FD 4A               [ 1]  299 	dec	a
+      0000FE 26 FB            [ 1]  300 	jrne	00117$
+      000100                        301 00118$:
+                                    302 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 339: enablestatus = (uint8_t)((uint8_t)SPI->SR & itmask2);
+      000100 AE 52 03         [ 2]  303 	ldw	x, #0x5203
+      000103 F6               [ 1]  304 	ld	a, (x)
+      000104 14 02            [ 1]  305 	and	a, (0x02, sp)
+      000106 6B 01            [ 1]  306 	ld	(0x01, sp), a
+                                    307 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 341: if (((SPI->ICR & itpos) != (uint8_t)RESET) && enablestatus)
+      000108 AE 52 02         [ 2]  308 	ldw	x, #0x5202
+      00010B F6               [ 1]  309 	ld	a, (x)
+      00010C 14 03            [ 1]  310 	and	a, (0x03, sp)
+      00010E 4D               [ 1]  311 	tnz	a
+      00010F 27 08            [ 1]  312 	jreq	00102$
+      000111 0D 01            [ 1]  313 	tnz	(0x01, sp)
+      000113 27 04            [ 1]  314 	jreq	00102$
+                                    315 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 344: pendingbitstatus = SET;
+      000115 A6 01            [ 1]  316 	ld	a, #0x01
+      000117 20 01            [ 2]  317 	jra	00103$
+      000119                        318 00102$:
+                                    319 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 349: pendingbitstatus = RESET;
+      000119 4F               [ 1]  320 	clr	a
+      00011A                        321 00103$:
+                                    322 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 352: return  pendingbitstatus;
+      00011A 5B 03            [ 2]  323 	addw	sp, #3
+      00011C 81               [ 4]  324 	ret
+                                    325 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 367: void SPI_ClearITPendingBit(void)
+                                    326 ;	-----------------------------------------
+                                    327 ;	 function SPI_ClearITPendingBit
+                                    328 ;	-----------------------------------------
+      00011D                        329 _SPI_ClearITPendingBit:
+                                    330 ;	lib/STM8L10x_StdPeriph_Driver/src/stm8l10x_spi.c: 370: SPI->SR = (uint8_t)(~SPI_SR_WKUP);
+      00011D AE 52 03         [ 2]  331 	ldw	x, #0x5203
+      000120 A6 F7            [ 1]  332 	ld	a, #0xf7
+      000122 F7               [ 1]  333 	ld	(x), a
+      000123 81               [ 4]  334 	ret
+                                    335 	.area CODE
+                                    336 	.area INITIALIZER
+                                    337 	.area CABS (ABS)

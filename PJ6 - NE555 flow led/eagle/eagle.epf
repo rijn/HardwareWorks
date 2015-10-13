@@ -346,6 +346,7 @@ UsedLibrary="/Applications/EAGLE-7.3.2/lbr/xilinx-xc9.lbr"
 UsedLibrary="/Applications/EAGLE-7.3.2/lbr/xilinx-xcv.lbr"
 UsedLibrary="/Applications/EAGLE-7.3.2/lbr/zetex.lbr"
 UsedLibrary="/Applications/EAGLE-7.3.2/lbr/zilog.lbr"
+UsedLibrary="/Users/rijn/webroot/HardwareWorks/eagle/lbr/r1.lbr"
 UsedLibrary="/Users/rijn/webroot/Eagle-Libraries/adafruit.lbr"
 UsedLibrary="/Users/rijn/webroot/Eagle-Libraries/holes.lbr"
 UsedLibrary="/Users/rijn/webroot/Eagle-Libraries/pneumatic.lbr"
@@ -696,7 +697,6 @@ UsedLibrary="/Applications/EAGLE-7.3.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="/Applications/EAGLE-7.3.0/lbr/zetex.lbr"
 UsedLibrary="/Applications/EAGLE-7.3.0/lbr/zilog.lbr"
 UsedLibrary="/Users/rijn/webroot/Eagle-Libraries/Vendors/texas.lbr"
-UsedLibrary="/Users/rijn/webroot/HardwareWorks/eagle/lbr/r1.lbr"
 UsedLibrary="/Users/rijn/webroot/HardwareWorks/eagle/lbr/SparkFun-Eagle-Libraries-master/GeekAmmo.lbr"
 UsedLibrary="/Users/rijn/webroot/HardwareWorks/eagle/lbr/SparkFun-Eagle-Libraries-master/LilyPad-Wearables.lbr"
 UsedLibrary="/Users/rijn/webroot/HardwareWorks/eagle/lbr/SparkFun-Eagle-Libraries-master/SparkFun-Aesthetics.lbr"
@@ -718,12 +718,5 @@ UsedLibrary="/Users/rijn/webroot/HardwareWorks/eagle/lbr/SparkFun-Eagle-Librarie
 UsedLibrary="/Users/rijn/webroot/HardwareWorks/eagle/lbr/SparkFun-Eagle-Libraries-master/SparkFun-Sensors.lbr"
 UsedLibrary="/Users/rijn/webroot/HardwareWorks/eagle/lbr/SparkFun-Eagle-Libraries-master/User-Submitted.lbr"
 
-[Win_1]
-Type="Control Panel"
-Loc="360 248 1322 803"
-State=2
-Number=0
-
 [Desktop]
 Screen="1440 900"
-Window="Win_1"

@@ -1,0 +1,16 @@
+-muwx
+-i main.ihx
+-Y
+-b HOME = 0x8000
+-b DATA = 0x0001
+-k /usr/local/bin/../share/sdcc/lib/stm8
+-k /usr/local/Cellar/sdcc/3.4.0/share/sdcc/lib/stm8
+-l stm8
+main.rel
+stm8l10x_clk.rel
+stm8l10x_gpio.rel
+stm8l10x_i2c.rel
+stm8l10x_spi.rel
+stm8l10x_usart.rel
+
+-e
