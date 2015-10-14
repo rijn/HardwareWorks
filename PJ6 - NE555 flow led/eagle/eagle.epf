@@ -718,5 +718,12 @@ UsedLibrary="/Users/rijn/webroot/HardwareWorks/eagle/lbr/SparkFun-Eagle-Librarie
 UsedLibrary="/Users/rijn/webroot/HardwareWorks/eagle/lbr/SparkFun-Eagle-Libraries-master/SparkFun-Sensors.lbr"
 UsedLibrary="/Users/rijn/webroot/HardwareWorks/eagle/lbr/SparkFun-Eagle-Libraries-master/User-Submitted.lbr"
 
+[Win_1]
+Type="Control Panel"
+Loc="360 248 1322 803"
+State=2
+Number=0
+
 [Desktop]
 Screen="1440 900"
+Window="Win_1"
