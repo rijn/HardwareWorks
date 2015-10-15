@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16532,31 +16532,21 @@ TO GND</text>
 <text x="-5.08" y="23.368" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-25.146" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
-<symbol name="NRF24L01+">
-<pin name="CE" x="-17.78" y="5.08" length="middle"/>
-<pin name="CSN" x="-17.78" y="2.54" length="middle"/>
-<pin name="SCK" x="-17.78" y="0" length="middle"/>
-<pin name="MOSI" x="-17.78" y="-2.54" length="middle"/>
-<pin name="MISO" x="-17.78" y="-5.08" length="middle"/>
-<pin name="IRQ" x="-5.08" y="-17.78" length="middle" rot="R90"/>
-<pin name="VDD_1" x="-2.54" y="-17.78" length="middle" rot="R90"/>
-<pin name="VSS_1" x="0" y="-17.78" length="middle" rot="R90"/>
-<pin name="XS2" x="2.54" y="-17.78" length="middle" rot="R90"/>
-<pin name="XS1" x="5.08" y="-17.78" length="middle" rot="R90"/>
-<pin name="VDD_PA" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="ANT1" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="ANT2" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="VSS_2" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="VDD_2" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="IREF" x="5.08" y="17.78" length="middle" rot="R270"/>
-<pin name="VSS_3" x="2.54" y="17.78" length="middle" rot="R270"/>
-<pin name="VDD_3" x="0" y="17.78" length="middle" rot="R270"/>
-<pin name="DVDD" x="-2.54" y="17.78" length="middle" rot="R270"/>
-<pin name="VSS_4" x="-5.08" y="17.78" length="middle" rot="R270"/>
-<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
-<wire x1="15.24" y1="15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<symbol name="MAX13488">
+<pin name="RO" x="-10.16" y="5.08" length="middle"/>
+<pin name="RE" x="-10.16" y="2.54" length="middle"/>
+<pin name="SHDN" x="-10.16" y="-5.08" length="middle"/>
+<pin name="DI" x="-10.16" y="-7.62" length="middle"/>
+<pin name="VCC" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="B" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="A" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -24532,9 +24522,9 @@ signals.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NRF24L01+">
+<deviceset name="MAX13488">
 <gates>
-<gate name="G$1" symbol="NRF24L01+" x="0" y="0"/>
+<gate name="G$1" symbol="MAX13488" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="">
