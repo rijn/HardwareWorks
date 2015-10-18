@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -10164,6 +10164,28 @@ Source: http://www.linear.com .. LT1996</description>
 <text x="-6.985" y="-2.54" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <circle x="10.16" y="4.826" radius="0.359209375" width="0.127" layer="21"/>
 </package>
+<package name="DIL04">
+<description>&lt;b&gt;Dual In Line&lt;/b&gt;</description>
+<wire x1="0" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="21"/>
+<wire x1="0" y1="5.08" x2="0" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-1.016" x2="-5.08" y2="1.016" width="0.1524" layer="21" curve="180"/>
+<wire x1="-5.08" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-5.08" width="0.1524" layer="21"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="3" x="-1.27" y="3.81" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="4" x="-3.81" y="3.81" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<text x="1.905" y="-4.445" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="-5.715" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<circle x="-4.064" y="-1.778" radius="0.359209375" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AT25FS010">
@@ -16532,31 +16554,27 @@ TO GND</text>
 <text x="-5.08" y="23.368" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-25.146" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
-<symbol name="NRF24L01+">
-<pin name="CE" x="-17.78" y="5.08" length="middle"/>
-<pin name="CSN" x="-17.78" y="2.54" length="middle"/>
-<pin name="SCK" x="-17.78" y="0" length="middle"/>
-<pin name="MOSI" x="-17.78" y="-2.54" length="middle"/>
-<pin name="MISO" x="-17.78" y="-5.08" length="middle"/>
-<pin name="IRQ" x="-5.08" y="-17.78" length="middle" rot="R90"/>
-<pin name="VDD_1" x="-2.54" y="-17.78" length="middle" rot="R90"/>
-<pin name="VSS_1" x="0" y="-17.78" length="middle" rot="R90"/>
-<pin name="XS2" x="2.54" y="-17.78" length="middle" rot="R90"/>
-<pin name="XS1" x="5.08" y="-17.78" length="middle" rot="R90"/>
-<pin name="VDD_PA" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="ANT1" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="ANT2" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="VSS_2" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="VDD_2" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="IREF" x="5.08" y="17.78" length="middle" rot="R270"/>
-<pin name="VSS_3" x="2.54" y="17.78" length="middle" rot="R270"/>
-<pin name="VDD_3" x="0" y="17.78" length="middle" rot="R270"/>
-<pin name="DVDD" x="-2.54" y="17.78" length="middle" rot="R270"/>
-<pin name="VSS_4" x="-5.08" y="17.78" length="middle" rot="R270"/>
-<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
-<wire x1="15.24" y1="15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<symbol name="MAX13488">
+<pin name="RO" x="-10.16" y="5.08" length="middle"/>
+<pin name="RE" x="-10.16" y="2.54" length="middle"/>
+<pin name="SHDN" x="-10.16" y="-5.08" length="middle"/>
+<pin name="DI" x="-10.16" y="-7.62" length="middle"/>
+<pin name="VCC" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="B" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="A" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="TLP785">
+<pin name="P$1" x="-12.7" y="5.08" length="middle"/>
+<pin name="P$2" x="-12.7" y="-5.08" length="middle"/>
+<pin name="P$4" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="P$3" x="12.7" y="-5.08" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -24532,11 +24550,22 @@ signals.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NRF24L01+">
+<deviceset name="MAX13488">
 <gates>
+<gate name="G$1" symbol="MAX13488" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="SOIC8">
+<connects>
+<connect gate="G$1" pin="A" pad="6"/>
+<connect gate="G$1" pin="B" pad="7"/>
+<connect gate="G$1" pin="DI" pad="4"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="RE" pad="2"/>
+<connect gate="G$1" pin="RO" pad="1"/>
+<connect gate="G$1" pin="SHDN" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
