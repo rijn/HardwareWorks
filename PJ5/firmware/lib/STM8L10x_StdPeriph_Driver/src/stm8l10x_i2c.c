@@ -240,7 +240,7 @@ void I2C_Init(uint32_t OutputClockFrequency, uint16_t OwnAddress,
 
   /* Write CCR with new calculated value */
   I2C->CCRL = (uint8_t)result;
-  I2C->CCRH = (uint8_t)((uint8_t)((uint8_t)((uint8_t)result >> 8) & I2C_CCRH_CCR) | tmpccrh);
+  I2C->CCRH = (uint8_t)((uint8_t)((uint8_t)((uint8_t)(result >> 8)) & I2C_CCRH_CCR) | tmpccrh);
 
   /* Enable I2C */
     I2C->CR1 |= I2C_CR1_PE;

@@ -62,6 +62,12 @@ uint8_t ITC_GetCPUCC(void)
   return; /* Ignore compiler warning, the returned value is in A register */
 #elif defined _RAISONANCE_ /* _RAISONANCE_ */
   return _getCC_();
+#elif defined _SDCC_
+  __asm
+  push cc
+  pop a
+  __endasm;
+  return 0;
 #else /* _IAR_ */
   asm("push cc");
   asm("pop a"); /* Ignore compiler warning, the returned value is in A register */
