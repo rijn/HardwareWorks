@@ -16630,6 +16630,18 @@ TO GND</text>
 <text x="5.08" y="-12.7" size="1.27" layer="95">&gt;NAME</text>
 <text x="5.08" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="SN74AHC1G04">
+<pin name="A" x="-12.7" y="0" length="middle"/>
+<pin name="Y" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="VCC" x="0" y="12.7" length="middle" rot="R270"/>
+<pin name="GND" x="0" y="-12.7" length="middle" rot="R90"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="5.08" y="-12.7" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="AT25FS010">
@@ -23024,6 +23036,29 @@ Footprint unproven.</description>
 </technology>
 </technologies>
 </device>
+<device name="_TSSOP16" package="TSSOP16">
+<connects>
+<connect gate="A" pin="CLK" pad="14"/>
+<connect gate="A" pin="CO" pad="12"/>
+<connect gate="A" pin="ENA" pad="13"/>
+<connect gate="A" pin="Q0" pad="3"/>
+<connect gate="A" pin="Q1" pad="2"/>
+<connect gate="A" pin="Q2" pad="4"/>
+<connect gate="A" pin="Q3" pad="7"/>
+<connect gate="A" pin="Q4" pad="10"/>
+<connect gate="A" pin="Q5" pad="1"/>
+<connect gate="A" pin="Q6" pad="5"/>
+<connect gate="A" pin="Q7" pad="6"/>
+<connect gate="A" pin="Q8" pad="9"/>
+<connect gate="A" pin="Q9" pad="11"/>
+<connect gate="A" pin="RES" pad="15"/>
+<connect gate="P" pin="GND" pad="8"/>
+<connect gate="P" pin="VCC" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="PIC16F1823-14PIN">
@@ -24637,6 +24672,35 @@ signals.</description>
 <connect gate="G$1" pin="P$2" pad="2"/>
 <connect gate="G$1" pin="P$3" pad="3"/>
 <connect gate="G$1" pin="P$4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74CBT3251">
+<gates>
+<gate name="G$1" symbol="SN74CBT3251" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP16">
+<connects>
+<connect gate="G$1" pin="A" pad="5"/>
+<connect gate="G$1" pin="B1" pad="4"/>
+<connect gate="G$1" pin="B2" pad="3"/>
+<connect gate="G$1" pin="B3" pad="2"/>
+<connect gate="G$1" pin="B4" pad="1"/>
+<connect gate="G$1" pin="B5" pad="15"/>
+<connect gate="G$1" pin="B6" pad="14"/>
+<connect gate="G$1" pin="B7" pad="13"/>
+<connect gate="G$1" pin="B8" pad="12"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="OE" pad="7"/>
+<connect gate="G$1" pin="S0" pad="11"/>
+<connect gate="G$1" pin="S1" pad="10"/>
+<connect gate="G$1" pin="S2" pad="9"/>
+<connect gate="G$1" pin="VCC" pad="16"/>
 </connects>
 <technologies>
 <technology name=""/>
