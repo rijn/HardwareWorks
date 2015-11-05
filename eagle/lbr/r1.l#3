@@ -22,24 +22,24 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
@@ -1125,6 +1125,97 @@
 <wire x1="-1.5" y1="-2.6" x2="-1.7" y2="-2.8" width="0.127" layer="22"/>
 <wire x1="-1.5" y1="-2.6" x2="-1.3" y2="-2.8" width="0.127" layer="22"/>
 </package>
+<package name="DRV(S-PWSON-N6)">
+<smd name="1" x="0.65" y="1.05" dx="0.3" dy="0.7" layer="1"/>
+<smd name="2" x="0" y="1.05" dx="0.3" dy="0.7" layer="1"/>
+<smd name="3" x="-0.65" y="1.05" dx="0.3" dy="0.7" layer="1"/>
+<smd name="4" x="-0.65" y="-1.05" dx="0.3" dy="0.7" layer="1"/>
+<smd name="5" x="0" y="-1.05" dx="0.3" dy="0.7" layer="1"/>
+<smd name="6" x="0.65" y="-1.05" dx="0.3" dy="0.7" layer="1"/>
+<smd name="NC" x="0" y="0" dx="1.4" dy="0.8" layer="1"/>
+<wire x1="-1.05" y1="1.05" x2="-1.05" y2="-1.05" width="0.127" layer="21"/>
+<wire x1="1.05" y1="1.05" x2="1.05" y2="-1.05" width="0.127" layer="21"/>
+<circle x="1.4" y="1.1" radius="0.14141875" width="0.127" layer="21"/>
+<wire x1="-1.05" y1="1.05" x2="-0.95" y2="1.05" width="0.127" layer="21"/>
+<wire x1="1.05" y1="1.05" x2="0.95" y2="1.05" width="0.127" layer="21"/>
+<wire x1="-1.05" y1="-1.05" x2="-0.95" y2="-1.05" width="0.127" layer="21"/>
+<wire x1="1.05" y1="-1.05" x2="0.95" y2="-1.05" width="0.127" layer="21"/>
+<text x="1.27" y="-1.27" size="0.762" layer="25" font="vector">&gt;NAME</text>
+</package>
+<package name="YZT(S-XBGA-N4)">
+<smd name="A1" x="0.25" y="-0.25" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="A2" x="-0.25" y="-0.25" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="B1" x="0.25" y="0.25" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="B2" x="-0.25" y="0.25" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<wire x1="-0.7" y1="0.7" x2="0.7" y2="0.7" width="0.127" layer="21"/>
+<wire x1="0.7" y1="0.7" x2="0.7" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="0.7" y1="-0.7" x2="-0.7" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="-0.7" x2="-0.7" y2="0.7" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="0.9" y="-0.9"/>
+<vertex x="0.5" y="-0.9"/>
+<vertex x="0.5" y="-0.5"/>
+<vertex x="0.9" y="-0.5"/>
+</polygon>
+<text x="1.25" y="-0.7" size="0.762" layer="25" font="vector">&gt;NAME</text>
+</package>
+<package name="DDC(R-PDSO-G6)">
+<smd name="1" x="0.95" y="1.35" dx="0.6" dy="1.1" layer="1"/>
+<smd name="2" x="0" y="1.35" dx="0.6" dy="1.1" layer="1"/>
+<smd name="3" x="-0.95" y="1.35" dx="0.6" dy="1.1" layer="1"/>
+<smd name="4" x="-0.95" y="-1.35" dx="0.6" dy="1.1" layer="1"/>
+<smd name="5" x="0" y="-1.35" dx="0.6" dy="1.1" layer="1"/>
+<smd name="6" x="0.95" y="-1.35" dx="0.6" dy="1.1" layer="1"/>
+<wire x1="-1.6" y1="0.9" x2="-1.6" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="1.6" y1="0.9" x2="1.6" y2="-0.9" width="0.127" layer="21"/>
+<circle x="2" y="1.2" radius="0.22360625" width="0.127" layer="21"/>
+<text x="-2" y="-0.9" size="0.762" layer="21" font="vector" rot="R90">&gt;NAME</text>
+</package>
+<package name="TSSOP20">
+<smd name="1" x="-2.925" y="-2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="2" x="-2.275" y="-2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="3" x="-1.625" y="-2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="4" x="-0.975" y="-2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="5" x="-0.325" y="-2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="6" x="0.325" y="-2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="7" x="0.975" y="-2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="8" x="1.625" y="-2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="9" x="2.275" y="-2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="10" x="2.925" y="-2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="11" x="2.925" y="2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="12" x="2.275" y="2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="13" x="1.625" y="2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="14" x="0.975" y="2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="15" x="0.325" y="2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="16" x="-0.325" y="2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="17" x="-0.975" y="2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="18" x="-1.625" y="2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="19" x="-2.275" y="2.875" dx="0.4" dy="1.35" layer="1"/>
+<smd name="20" x="-2.925" y="2.875" dx="0.4" dy="1.35" layer="1"/>
+<wire x1="-3" y1="-2.2" x2="3" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="3" y1="-2.2" x2="3.3" y2="-1.9" width="0.127" layer="21" curve="90"/>
+<wire x1="3.3" y1="-1.9" x2="3.3" y2="1.9" width="0.127" layer="21"/>
+<wire x1="3.3" y1="1.9" x2="3" y2="2.2" width="0.127" layer="21" curve="90"/>
+<wire x1="3" y1="2.2" x2="-3" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-3" y1="2.2" x2="-3.3" y2="1.9" width="0.127" layer="21" curve="90"/>
+<wire x1="-3.3" y1="1.9" x2="-3.3" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="-1.9" x2="-3" y2="-2.2" width="0.127" layer="21" curve="90"/>
+<circle x="-2.3" y="-1.1" radius="0.360553125" width="0.127" layer="21"/>
+<text x="-3.8" y="-2" size="0.762" layer="21" font="vector" rot="R90">&gt;NAME</text>
+</package>
+<package name="DMB(S-PWSON-N6)">
+<smd name="1" x="1" y="1.5" dx="0.5" dy="0.8" layer="1" roundness="100"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<smd name="2" x="0" y="1.5" dx="0.5" dy="0.8" layer="1" roundness="100"/>
+<smd name="3" x="-1" y="1.5" dx="0.5" dy="0.8" layer="1" roundness="100"/>
+<smd name="4" x="-1" y="-1.5" dx="0.5" dy="0.8" layer="1" roundness="100"/>
+<smd name="5" x="0" y="-1.5" dx="0.5" dy="0.8" layer="1" roundness="100"/>
+<smd name="6" x="1" y="-1.5" dx="0.5" dy="0.8" layer="1" roundness="100"/>
+<smd name="P$1" x="0" y="0" dx="2.4" dy="1.5" layer="1" roundness="20"/>
+<circle x="2.1" y="1.3" radius="0.282840625" width="0.127" layer="21"/>
+<text x="-1.9" y="-1.5" size="0.762" layer="21" font="vector" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BATTERY">
@@ -1197,6 +1288,81 @@
 <text x="-5.08" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-5.08" y="20.32" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="TPS61291">
+<pin name="SW" x="-15.24" y="2.54" length="middle"/>
+<pin name="VOUT" x="-15.24" y="0" length="middle"/>
+<pin name="VIN" x="-15.24" y="-2.54" length="middle"/>
+<pin name="GND" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="VSEL" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="EN/BYP" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<text x="-12.7" y="7.62" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-12.7" y="-7.62" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="TPS22907">
+<pin name="VIN" x="-12.7" y="2.54" length="middle"/>
+<pin name="ON" x="-12.7" y="0" length="middle"/>
+<pin name="VOUT" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="GND" x="12.7" y="0" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-2.54" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="-5.08" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="TPL5110">
+<pin name="VDD" x="-20.32" y="2.54" length="middle"/>
+<pin name="GND" x="-20.32" y="0" length="middle"/>
+<pin name="DELAY/M_DRV" x="-20.32" y="-2.54" length="middle"/>
+<pin name="EN/ONE_SHOT" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="DRV" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="DONE" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-17.78" y1="5.08" x2="-17.78" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-5.08" x2="17.78" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-5.08" x2="17.78" y2="5.08" width="0.254" layer="94"/>
+<wire x1="17.78" y1="5.08" x2="-17.78" y2="5.08" width="0.254" layer="94"/>
+<text x="-17.78" y="7.62" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-17.78" y="-7.62" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32F030F4">
+<pin name="VDDA" x="-17.78" y="20.32" length="middle"/>
+<pin name="VDD" x="-17.78" y="17.78" length="middle"/>
+<pin name="VSS" x="-17.78" y="10.16" length="middle"/>
+<pin name="PF0-OSC_IN" x="-17.78" y="2.54" length="middle"/>
+<pin name="PF1-OSC_OUT" x="-17.78" y="0" length="middle"/>
+<pin name="BOOT0" x="-17.78" y="-5.08" length="middle"/>
+<pin name="NRST" x="-17.78" y="-10.16" length="middle"/>
+<pin name="PA0" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="PA1" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="PA2" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="PA3" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="PA4" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="PA5" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="PA6" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="PA7" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="PA10" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="PA13" x="20.32" y="15.24" length="middle" rot="R180"/>
+<pin name="PA14" x="20.32" y="17.78" length="middle" rot="R180"/>
+<pin name="PB1" x="20.32" y="20.32" length="middle" rot="R180"/>
+<wire x1="17.78" y1="20.02" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<text x="-15.24" y="25.4" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-15.24" y="-15.24" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+<pin name="PA9" x="20.32" y="10.16" length="middle" rot="R180"/>
+<wire x1="17.78" y1="22.86" x2="17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="22.86" x2="-15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="22.86" x2="17.78" y2="22.86" width="0.254" layer="94"/>
+</symbol>
+<symbol name="HDC1050">
+<pin name="SDA" x="-12.7" y="2.54" length="middle"/>
+<pin name="GND" x="-12.7" y="0" length="middle"/>
+<pin name="SCL" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="VDD" x="12.7" y="0" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CR2032">
@@ -1243,6 +1409,123 @@
 <connect gate="G$1" pin="2" pad="P$2"/>
 <connect gate="G$1" pin="3" pad="P$3"/>
 <connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="0.5_INCH_OLED">
+<gates>
+<gate name="G$1" symbol="0.5_INCH_OLED" x="-2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="BL125-11RL-TAGF">
+<connects>
+<connect gate="G$1" pin="A0" pad="4"/>
+<connect gate="G$1" pin="CSB" pad="5"/>
+<connect gate="G$1" pin="D0/SCL" pad="2"/>
+<connect gate="G$1" pin="D1/SI" pad="3"/>
+<connect gate="G$1" pin="IREF" pad="8"/>
+<connect gate="G$1" pin="IXS" pad="1"/>
+<connect gate="G$1" pin="RSTB" pad="6"/>
+<connect gate="G$1" pin="VCC_C" pad="9"/>
+<connect gate="G$1" pin="VCC_R" pad="10"/>
+<connect gate="G$1" pin="VDD" pad="7"/>
+<connect gate="G$1" pin="VSS" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS61291">
+<gates>
+<gate name="U1" symbol="TPS61291" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DRV(S-PWSON-N6)">
+<connects>
+<connect gate="U1" pin="EN/BYP" pad="4"/>
+<connect gate="U1" pin="GND" pad="6"/>
+<connect gate="U1" pin="SW" pad="1"/>
+<connect gate="U1" pin="VIN" pad="3"/>
+<connect gate="U1" pin="VOUT" pad="2"/>
+<connect gate="U1" pin="VSEL" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS22907">
+<gates>
+<gate name="G$1" symbol="TPS22907" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="YZT(S-XBGA-N4)">
+<connects>
+<connect gate="G$1" pin="GND" pad="B1"/>
+<connect gate="G$1" pin="ON" pad="B2"/>
+<connect gate="G$1" pin="VIN" pad="A2"/>
+<connect gate="G$1" pin="VOUT" pad="A1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLP5110">
+<gates>
+<gate name="G$1" symbol="TPL5110" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DDC(R-PDSO-G6)">
+<connects>
+<connect gate="G$1" pin="DELAY/M_DRV" pad="3"/>
+<connect gate="G$1" pin="DONE" pad="4"/>
+<connect gate="G$1" pin="DRV" pad="5"/>
+<connect gate="G$1" pin="EN/ONE_SHOT" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STM32F030F4">
+<gates>
+<gate name="U1" symbol="STM32F030F4" x="-2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="TSSOP20">
+<connects>
+<connect gate="U1" pin="BOOT0" pad="1"/>
+<connect gate="U1" pin="NRST" pad="4"/>
+<connect gate="U1" pin="PA0" pad="6"/>
+<connect gate="U1" pin="PA1" pad="7"/>
+<connect gate="U1" pin="PA10" pad="18"/>
+<connect gate="U1" pin="PA13" pad="19"/>
+<connect gate="U1" pin="PA14" pad="20"/>
+<connect gate="U1" pin="PA2" pad="8"/>
+<connect gate="U1" pin="PA3" pad="9"/>
+<connect gate="U1" pin="PA4" pad="10"/>
+<connect gate="U1" pin="PA5" pad="11"/>
+<connect gate="U1" pin="PA6" pad="12"/>
+<connect gate="U1" pin="PA7" pad="13"/>
+<connect gate="U1" pin="PA9" pad="17"/>
+<connect gate="U1" pin="PB1" pad="14"/>
+<connect gate="U1" pin="PF0-OSC_IN" pad="2"/>
+<connect gate="U1" pin="PF1-OSC_OUT" pad="3"/>
+<connect gate="U1" pin="VDD" pad="16"/>
+<connect gate="U1" pin="VDDA" pad="5"/>
+<connect gate="U1" pin="VSS" pad="15"/>
 </connects>
 <technologies>
 <technology name=""/>
