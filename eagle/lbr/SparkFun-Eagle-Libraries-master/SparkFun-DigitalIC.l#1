@@ -16642,6 +16642,22 @@ TO GND</text>
 <text x="5.08" y="-12.7" size="1.27" layer="95">&gt;NAME</text>
 <text x="5.08" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="NLSX4373-D">
+<pin name="VL" x="-17.78" y="5.08" length="middle"/>
+<pin name="IO_VL_1" x="-17.78" y="2.54" length="middle"/>
+<pin name="IO_VL_2" x="-17.78" y="0" length="middle"/>
+<pin name="GND" x="-17.78" y="-2.54" length="middle"/>
+<pin name="EN" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="IO_VCC_2" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="IO_VCC_1" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="VCC" x="20.32" y="5.08" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="7.62" x2="-15.24" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-5.08" x2="17.78" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-5.08" x2="17.78" y2="7.62" width="0.254" layer="94"/>
+<wire x1="17.78" y1="7.62" x2="-15.24" y2="7.62" width="0.254" layer="94"/>
+<text x="-15.24" y="10.16" size="1.27" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="AT25FS010">
@@ -24711,6 +24727,24 @@ signals.</description>
 <deviceset name="SN74AHC1G04">
 <gates>
 <gate name="G$1" symbol="SN74AHC1G04" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="Y" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NLSX4373">
+<gates>
+<gate name="G$1" symbol="NLSX4373-D" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
