@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.15
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Rijn Bian, Dexta, LIC=1WSLQ-NPI29-UMD9A-1TH29-65JI1-8FTPM
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.15.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.15.0_KEIL
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+\\psf\Home\Documents\MCU\20150713 TEST\main.uvproj
+Project File Date:  07/20/2015
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+User\main.c(100): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+                                        comSendBuf(COM1, buffer, 54);
+User\main.c(125): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+                                comSendBuf(COM1, buffer, 54);
+User\main.c(79): warning:  #177-D: variable "temp" was declared but never referenced
+                u8 temp;
+User\main.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=12136 RO-data=316 RW-data=64 ZI-data=6848  
+FromELF: creating hex file...
+".\output\main_output.axf" - 0 Error(s), 3 Warning(s).
+</pre>
+</body>
+</html>

@@ -38,3 +38,21 @@ eagle.epf
 
 # mac
 .DS_Store
+
+# BIN files for stm32
+*/bin/*
+*.bin
+*.dfu
+*.elf
+*.map
+*.hex
+*.d
+*.o
+
+# For Vim
+*.swp
+*.pyc
+
+# for ctags
+tags*
+.tags*

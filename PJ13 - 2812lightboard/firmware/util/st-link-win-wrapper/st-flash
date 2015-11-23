@@ -1,0 +1,42 @@
+#!/usr/bin/bash
+
+# Colors
+ESC_SEQ="\e["
+COL_RESET=$ESC_SEQ"0m"
+COL_RED=$ESC_SEQ"31m"
+COL_GREEN=$ESC_SEQ"32m"
+COL_YELLOW=$ESC_SEQ"33m"
+COL_BLUE=$ESC_SEQ"34m"
+COL_MAGENTA=$ESC_SEQ"35m"
+COL_CYAN=$ESC_SEQ"36m"
+COL_WHITE=$ESC_SEQ"97m"
+
+ST_LINK_CLI="winpty ST-LINK_CLI.exe"
+
+# title
+echo -e "${COL_CYAN}"
+echo -e "[ st-flash: a wrapper of ST_LINK_CLI.exe ]"
+echo -e "[        Yifei Zhang, Nov 2015           ]"
+echo -e "${COL_RESET}"
+
+COMMAND_RST="${ST_LINK_CLI} -Rst"
+
+COMMAND=""
+if [[ $1 == "erase" ]]; then
+    COMMAND="${ST_LINK_CLI} -ME"
+fi
+
+if [[ $1 == "write" ]]; then
+    COMMAND="${ST_LINK_CLI} -P $2 $3"
+fi
+
+if [[ $COMMAND != "" ]]; then
+    echo -e "${COL_WHITE}Running \"${COMMAND}\"...${COL_RESET}"
+    ${COMMAND}
+    echo -e "${COL_WHITE}Performing MCU Reset...${COL_RESET}"
+    ${COMMAND_RST}
+else
+    echo -e "${COL_RED}COMMAND NOT SUPPORTED!${COL_RESET}"
+    exit 1
+fi
+exit 0
