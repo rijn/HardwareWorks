@@ -1,0 +1,55 @@
+Added Component: Designator=C10(C1206)
+Added Component: Designator=C11(C1206)
+Added Component: Designator=C12(1608[0603])
+Added Component: Designator=C13(1608[0603])
+Added Component: Designator=C14(6-0805_N)
+Added Component: Designator=C15(6-0805_N)
+Added Component: Designator=C16(6-0805_N)
+Added Component: Designator=C17(6-0805_N)
+Added Component: Designator=C18(6-0805_N)
+Added Component: Designator=R4(1608[0603])
+Added Component: Designator=R5(1608[0603])
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=GND Pin=C14-1
+Added Pin To Net: NetName=GND Pin=C15-1
+Added Pin To Net: NetName=GND Pin=C16-1
+Added Pin To Net: NetName=GND Pin=C17-1
+Added Pin To Net: NetName=GND Pin=C18-1
+Added Pin To Net: NetName=GND Pin=R5-1
+Added Pin To Net: NetName=GND Pin=U2-7
+Added Pin To Net: NetName=GND Pin=U2-21
+Added Pin To Net: NetName=FB Pin=C13-1
+Added Pin To Net: NetName=FB Pin=R4-1
+Added Pin To Net: NetName=FB Pin=R5-2
+Added Pin To Net: NetName=FB Pin=U2-3
+Added Net: Name=FB
+Added Pin To Net: NetName=NetC12_2 Pin=C12-2
+Added Pin To Net: NetName=NetC12_2 Pin=U2-14
+Added Net: Name=NetC12_2
+Added Pin To Net: NetName=VIN- Pin=C10-2
+Added Pin To Net: NetName=VIN- Pin=C11-2
+Added Pin To Net: NetName=VIN- Pin=U2-15
+Added Pin To Net: NetName=VIN- Pin=U2-16
+Added Net: Name=VIN-
+Added Pin To Net: NetName=VOUT- Pin=C13-2
+Added Pin To Net: NetName=VOUT- Pin=C14-2
+Added Pin To Net: NetName=VOUT- Pin=C15-2
+Added Pin To Net: NetName=VOUT- Pin=C16-2
+Added Pin To Net: NetName=VOUT- Pin=C17-2
+Added Pin To Net: NetName=VOUT- Pin=C18-2
+Added Pin To Net: NetName=VOUT- Pin=R4-2
+Added Pin To Net: NetName=VOUT- Pin=U2-1
+Added Pin To Net: NetName=VOUT- Pin=U2-20
+Added Net: Name=VOUT-
+Added Member To Class: ClassName=LDO Member=Component C10 Tantalum 35V
+Added Member To Class: ClassName=LDO Member=Component C11 X5R 50V
+Added Member To Class: ClassName=LDO Member=Component C12 X5R 50V
+Added Member To Class: ClassName=LDO Member=Component C13 X7R 25V
+Added Member To Class: ClassName=LDO Member=Component C14 X5R 35V
+Added Member To Class: ClassName=LDO Member=Component C15 X5R 35V
+Added Member To Class: ClassName=LDO Member=Component C16 X5R 35V
+Added Member To Class: ClassName=LDO Member=Component C17 X5R 35V
+Added Member To Class: ClassName=LDO Member=Component C18 X5R 35V
+Added Member To Class: ClassName=LDO Member=Component R4 1/10W 1%
+Added Member To Class: ClassName=LDO Member=Component R5 1/10W 1%
+Added Room: Name=LDO

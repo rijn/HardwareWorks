@@ -1,0 +1,31 @@
+Added Component: Designator=GND(HDR1X8)
+Added Component: Designator=V+(HDR1X8)
+Added Component: Designator=V-(HDR1X8)
+Added Pin To Net: NetName=GND Pin=GND-1
+Added Pin To Net: NetName=GND Pin=GND-2
+Added Pin To Net: NetName=GND Pin=GND-3
+Added Pin To Net: NetName=GND Pin=GND-4
+Added Pin To Net: NetName=GND Pin=GND-5
+Added Pin To Net: NetName=GND Pin=GND-6
+Added Pin To Net: NetName=GND Pin=GND-7
+Added Pin To Net: NetName=GND Pin=GND-8
+Added Pin To Net: NetName=VOUT+ Pin=V+-1
+Added Pin To Net: NetName=VOUT+ Pin=V+-2
+Added Pin To Net: NetName=VOUT+ Pin=V+-3
+Added Pin To Net: NetName=VOUT+ Pin=V+-4
+Added Pin To Net: NetName=VOUT+ Pin=V+-5
+Added Pin To Net: NetName=VOUT+ Pin=V+-6
+Added Pin To Net: NetName=VOUT+ Pin=V+-7
+Added Pin To Net: NetName=VOUT+ Pin=V+-8
+Added Pin To Net: NetName=VOUT- Pin=V--1
+Added Pin To Net: NetName=VOUT- Pin=V--2
+Added Pin To Net: NetName=VOUT- Pin=V--3
+Added Pin To Net: NetName=VOUT- Pin=V--4
+Added Pin To Net: NetName=VOUT- Pin=V--5
+Added Pin To Net: NetName=VOUT- Pin=V--6
+Added Pin To Net: NetName=VOUT- Pin=V--7
+Added Pin To Net: NetName=VOUT- Pin=V--8
+Added Member To Class: ClassName=LDO Member=Component GND Header 8
+Added Member To Class: ClassName=LDO Member=Component V+ Header 8
+Added Member To Class: ClassName=LDO Member=Component V- Header 8
+Added Room: Name=LDO

@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=D2 Old Footprint=DIODE-0.7 New Footprint=AXIAL-0.3
+Change Component Footprint: Designator=D3 Old Footprint=DIODE-0.7 New Footprint=AXIAL-0.3
+Added Room: Name=LDO

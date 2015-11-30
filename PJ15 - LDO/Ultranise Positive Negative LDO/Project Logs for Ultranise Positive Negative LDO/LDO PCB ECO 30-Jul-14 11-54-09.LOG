@@ -1,0 +1,7 @@
+Added Component: Designator=S1(SW Press)
+Added Pin To Net: NetName=VOUT+ Pin=S1-1
+Added Pin To Net: NetName=NetC4_1 Pin=S1-2
+Added Pin To Net: NetName=SENSE/FB Pin=S1-3
+Added Pin To Net: NetName=VIN+ Pin=S1-4
+Added Pin To Net: NetName=NetR3_2 Pin=S1-6
+Added Member To Class: ClassName=LDO Member=Component S1 SW  Press

@@ -1,0 +1,3 @@
+Added Component: Designator=AC IN(SW AC 250V 6A)
+Added Member To Class: ClassName=LDO Member=Component AC IN SW AC 250V 6A
+Added Room: Name=LDO

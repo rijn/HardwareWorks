@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=SENSE/FB Pin=S1-1
+Removed Pin From Net: NetName=VOUT+ Pin=S1-2
+Removed Pin From Net: NetName=NetC4_1 Pin=S1-3
+Removed Pin From Net: NetName=NetR3_2 Pin=S1-4
+Removed Pin From Net: NetName=VIN+ Pin=S1-5
+Change Component DesignItemId : Designator=S1 Old DesignItemId=SW-DPDT New DesignItemId=SW  Press
+Change Component Footprint: Designator=S1 Old Footprint=DPDT-6 New Footprint=SW Press
+Change Component Comment : Designator=S1 Old Comment=SW-DPDT New Comment=SW  Press
+Added Pin To Net: NetName=VOUT+ Pin=S1-1
+Added Pin To Net: NetName=NetC4_1 Pin=S1-2
+Added Pin To Net: NetName=SENSE/FB Pin=S1-3
+Added Pin To Net: NetName=VIN+ Pin=S1-4
+Added Pin To Net: NetName=NetR3_2 Pin=S1-6
+Added Room: Name=LDO

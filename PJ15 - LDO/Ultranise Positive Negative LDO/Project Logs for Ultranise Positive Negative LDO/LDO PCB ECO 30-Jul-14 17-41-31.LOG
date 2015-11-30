@@ -1,0 +1,10 @@
+Added Component: Designator=P5(HDR1X2)
+Added Component: Designator=P6(HDR1X3)
+Added Pin To Net: NetName=VIN+ Pin=P5-1
+Added Pin To Net: NetName=GND Pin=P5-2
+Added Pin To Net: NetName=VOUT+ Pin=P6-1
+Added Pin To Net: NetName=GND Pin=P6-2
+Added Pin To Net: NetName=VOUT- Pin=P6-3
+Added Member To Class: ClassName=LDO Member=Component P5 Header 2
+Added Member To Class: ClassName=LDO Member=Component P6 Header 3
+Added Room: Name=LDO

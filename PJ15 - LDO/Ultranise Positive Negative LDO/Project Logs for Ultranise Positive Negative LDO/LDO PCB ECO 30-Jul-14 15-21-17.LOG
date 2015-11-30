@@ -1,0 +1,17 @@
+Added Component: Designator=C19(RB7.6-15)
+Added Component: Designator=C20(RB7.6-15)
+Added Component: Designator=C21(RB7.6-15)
+Added Component: Designator=C22(RB7.6-15)
+Added Component: Designator=P4(HDR1X3)
+Added Pin To Net: NetName=VIN+ Pin=C19-2
+Added Pin To Net: NetName=VIN+ Pin=C20-2
+Added Pin To Net: NetName=VIN- Pin=C21-2
+Added Pin To Net: NetName=VIN- Pin=C22-2
+Added Pin To Net: NetName=VIN+ Pin=P4-1
+Added Pin To Net: NetName=VIN- Pin=P4-3
+Added Member To Class: ClassName=LDO Member=Component C19 Cap Pol1
+Added Member To Class: ClassName=LDO Member=Component C20 Cap Pol1
+Added Member To Class: ClassName=LDO Member=Component C21 Cap Pol1
+Added Member To Class: ClassName=LDO Member=Component C22 Cap Pol1
+Added Member To Class: ClassName=LDO Member=Component P4 Header 3
+Added Room: Name=LDO

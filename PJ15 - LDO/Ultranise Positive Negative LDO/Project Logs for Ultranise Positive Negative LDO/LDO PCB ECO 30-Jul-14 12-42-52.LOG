@@ -1,0 +1,53 @@
+Removed Pin From Net: NetName=VOUT+ Pin=U1-15
+Change Component Comment : Designator=C5 Old Comment=Cap New Comment=X5R 35V
+Change Component Comment : Designator=C6 Old Comment=Cap New Comment=X5R 35V
+Change Component Comment : Designator=C7 Old Comment=Cap New Comment=X5R 35V
+Change Component Comment : Designator=C8 Old Comment=Cap New Comment=X5R 35V
+Change Component Comment : Designator=C9 Old Comment=Cap New Comment=X5R 35V
+Change Component Comment : Designator=C4 Old Comment=Cap New Comment=X7R 25V
+Change Component Comment : Designator=R1 Old Comment=Res1 New Comment=1/10W 1%
+Change Component Comment : Designator=R2 Old Comment=Res1 New Comment=1/10W 1%
+Added Component: Designator=C1(C1206)
+Added Component: Designator=C2(C1206)
+Added Component: Designator=C3(1608[0603])
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=VIN+ Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=VIN+ Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=VOUT+ Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U1-7
+Added Pin To Net: NetName=VIN+ Pin=U1-13
+Added Pin To Net: NetName=VIN+ Pin=U1-15
+Added Pin To Net: NetName=VIN+ Pin=U1-16
+Added Pin To Net: NetName=VOUT+ Pin=U1-20
+Added Pin To Net: NetName=0P1V Pin=S2-16
+Added Pin To Net: NetName=0P1V Pin=U1-12
+Added Net: Name=0P1V
+Added Pin To Net: NetName=0P2V Pin=S2-15
+Added Pin To Net: NetName=0P2V Pin=U1-11
+Added Net: Name=0P2V
+Added Pin To Net: NetName=0P4V Pin=S2-14
+Added Pin To Net: NetName=0P4V Pin=U1-10
+Added Net: Name=0P4V
+Added Pin To Net: NetName=0P8V Pin=S2-13
+Added Pin To Net: NetName=0P8V Pin=U1-9
+Added Net: Name=0P8V
+Added Pin To Net: NetName=1P6V Pin=S2-12
+Added Pin To Net: NetName=1P6V Pin=U1-8
+Added Net: Name=1P6V
+Added Pin To Net: NetName=3P2V Pin=S2-11
+Added Pin To Net: NetName=3P2V Pin=U1-6
+Added Net: Name=3P2V
+Added Pin To Net: NetName=6P4V1 Pin=S2-10
+Added Pin To Net: NetName=6P4V1 Pin=U1-5
+Added Net: Name=6P4V1
+Added Pin To Net: NetName=6P4V2 Pin=S2-9
+Added Pin To Net: NetName=6P4V2 Pin=U1-4
+Added Net: Name=6P4V2
+Added Pin To Net: NetName=NetC3_2 Pin=C3-2
+Added Pin To Net: NetName=NetC3_2 Pin=U1-14
+Added Net: Name=NetC3_2
+Added Member To Class: ClassName=LDO Member=Component C1 Tantalum 35V
+Added Member To Class: ClassName=LDO Member=Component C2 X5R 50V
+Added Member To Class: ClassName=LDO Member=Component C3 X5R 50V

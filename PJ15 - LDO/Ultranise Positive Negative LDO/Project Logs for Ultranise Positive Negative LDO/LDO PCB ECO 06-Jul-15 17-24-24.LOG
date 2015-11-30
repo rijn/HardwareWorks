@@ -1,0 +1,29 @@
+Removed Pin From Net: NetName=VIN- Pin=C10-1
+Removed Pin From Net: NetName=VIN- Pin=C11-2
+Removed Pin From Net: NetName=VIN- Pin=U2-15
+Removed Pin From Net: NetName=VIN- Pin=U2-16
+Removed Pin From Net: NetName=VOUT- Pin=V--1
+Removed Pin From Net: NetName=VOUT- Pin=V--2
+Removed Pin From Net: NetName=VOUT- Pin=V--3
+Removed Pin From Net: NetName=VOUT- Pin=V--4
+Removed Pin From Net: NetName=VOUT- Pin=V--5
+Removed Pin From Net: NetName=VOUT- Pin=V--6
+Removed Pin From Net: NetName=VOUT- Pin=V--7
+Removed Pin From Net: NetName=VOUT- Pin=V--8
+Change Component DesignItemId : Designator=U2 Old DesignItemId=TPS7A3301_RGW_20 New DesignItemId=TPS7A3301RGWT
+Change Component DesignItemId : Designator=U1 Old DesignItemId=TPS7A4701RGW New DesignItemId=TPS7A4701RGWT
+Change Component Footprint: Designator=U1 Old Footprint=RGW 5-mm x 5-mm QFN-20 New Footprint=RGW 5¡Á5 QFN-20
+Change Component Footprint: Designator=U2 Old Footprint=RGW20_3P15X3P15 New Footprint=RGW 5¡Á5 QFN-20
+Change Component Comment : Designator=U2 Old Comment=TPS7A3301_RGW_20 New Comment=TPS7A3301
+Change Component Comment : Designator=U1 Old Comment=TPSA4701_RGW_20 New Comment=TPS7A4701
+Added Pin To Net: NetName=GND Pin=U1-21
+Added Pin To Net: NetName=NetC10_1 Pin=C10-1
+Added Pin To Net: NetName=NetC10_1 Pin=C11-2
+Added Pin To Net: NetName=NetC10_1 Pin=U2-13
+Added Pin To Net: NetName=NetC10_1 Pin=U2-15
+Added Pin To Net: NetName=NetC10_1 Pin=U2-16
+Added Net: Name=NetC10_1
+Added Pin To Net: NetName=NetV-_1 Pin=V--1
+Added Pin To Net: NetName=NetV-_1 Pin=V--2
+Added Net: Name=NetV-_1
+Added Room: Name=LDO

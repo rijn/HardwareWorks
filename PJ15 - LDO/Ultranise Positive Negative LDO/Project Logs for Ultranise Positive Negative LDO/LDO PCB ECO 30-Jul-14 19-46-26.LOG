@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=GND Pin=C1-1
+Removed Pin From Net: NetName=VIN+ Pin=C1-2
+Removed Pin From Net: NetName=GND Pin=C10-1
+Removed Pin From Net: NetName=VIN- Pin=C10-2
+Change Component DesignItemId : Designator=C1 Old DesignItemId=Cap Semi New DesignItemId=Tantalum
+Change Component DesignItemId : Designator=C10 Old DesignItemId=Cap Semi New DesignItemId=Tantalum
+Change Component Footprint: Designator=C1 Old Footprint=C1206 New Footprint=D 7343-31
+Change Component Footprint: Designator=C10 Old Footprint=C1206 New Footprint=D 7343-31
+Change Component Comment : Designator=C1 Old Comment=Tantalum 35V New Comment=Tantalum
+Change Component Comment : Designator=C10 Old Comment=Tantalum 35V New Comment=Tantalum
+Added Pin To Net: NetName=VIN+ Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=VIN- Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Room: Name=LDO

@@ -1,0 +1,30 @@
+Removed Pin From Net: NetName=VIN+ Pin=C19-2
+Removed Pin From Net: NetName=VIN+ Pin=C20-2
+Removed Pin From Net: NetName=VIN+ Pin=P4-1
+Removed Pin From Net: NetName=VIN- Pin=P4-3
+Added Component: Designator=B1(Diode Bridge)
+Added Component: Designator=D2(DIODE-0.7)
+Added Component: Designator=D3(DIODE-0.7)
+Added Pin To Net: NetName=VIN- Pin=B1-1
+Added Pin To Net: NetName=VIN+ Pin=B1-4
+Added Pin To Net: NetName=VIN+ Pin=C19-1
+Added Pin To Net: NetName=GND Pin=C19-2
+Added Pin To Net: NetName=VIN+ Pin=C20-1
+Added Pin To Net: NetName=GND Pin=C20-2
+Added Pin To Net: NetName=GND Pin=C21-1
+Added Pin To Net: NetName=GND Pin=C22-1
+Added Pin To Net: NetName=GND Pin=D2-1
+Added Pin To Net: NetName=VIN+ Pin=D2-2
+Added Pin To Net: NetName=VIN- Pin=D3-1
+Added Pin To Net: NetName=GND Pin=D3-2
+Added Pin To Net: NetName=GND Pin=P4-2
+Added Pin To Net: NetName=NetB1_2 Pin=B1-2
+Added Pin To Net: NetName=NetB1_2 Pin=P4-1
+Added Net: Name=NetB1_2
+Added Pin To Net: NetName=NetB1_3 Pin=B1-3
+Added Pin To Net: NetName=NetB1_3 Pin=P4-3
+Added Net: Name=NetB1_3
+Added Member To Class: ClassName=LDO Member=Component B1 Diode Bridge
+Added Member To Class: ClassName=LDO Member=Component D2 D Zener
+Added Member To Class: ClassName=LDO Member=Component D3 D Zener
+Added Room: Name=LDO
