@@ -1,4 +1,0 @@
-
-<Project Header="Project 'stm8l10x'" Path=".\project.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="stm8l10x" >
-	<ApplicationBuild Header="stm8l10x" Extern=".\stm8l10x.rapp" Path=".\stm8l10x.rapp" OutputFile=".\Debug\stm8l10x.aof" sate="98" >		</ApplicationBuild>
-</Project>

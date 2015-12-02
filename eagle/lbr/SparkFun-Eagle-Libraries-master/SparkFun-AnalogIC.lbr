@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.2">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3018,6 +3018,20 @@ AIN3</text>
 <wire x1="63.5" y1="2.54" x2="58.42" y2="2.54" width="0.254" layer="94"/>
 <text x="62.992" y="2.794" size="1.27" layer="95" align="bottom-right">DIN</text>
 </symbol>
+<symbol name="REF3230">
+<pin name="GND_F" x="-15.24" y="2.54" length="middle"/>
+<pin name="GND_S" x="-15.24" y="0" length="middle"/>
+<pin name="ENABLE" x="-15.24" y="-2.54" length="middle"/>
+<pin name="OUT_F" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="OUT_S" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="IN" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<text x="-12.7" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ACS712">
@@ -4907,6 +4921,26 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 <attribute name="PROD_ID" value="IC-12239"/>
 <attribute name="VALUE" value="ADS1015"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="REF3230">
+<gates>
+<gate name="G$1" symbol="REF3230" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="ENABLE" pad="3"/>
+<connect gate="G$1" pin="GND_F" pad="1"/>
+<connect gate="G$1" pin="GND_S" pad="2"/>
+<connect gate="G$1" pin="IN" pad="4"/>
+<connect gate="G$1" pin="OUT_F" pad="6"/>
+<connect gate="G$1" pin="OUT_S" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
