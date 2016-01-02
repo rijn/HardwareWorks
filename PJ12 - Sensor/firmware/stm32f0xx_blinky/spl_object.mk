@@ -1,0 +1,24 @@
+# st_obj.mk - Selection of the ST library objects to compile
+SPL_OBJECT+=stm32f0xx_adc.o
+#SPL_OBJECT+=stm32f0xx_can.o
+#SPL_OBJECT+=stm32f0xx_cec.o
+#SPL_OBJECT+=stm32f0xx_comp.o
+#SPL_OBJECT+=stm32f0xx_crc.o
+#SPL_OBJECT+=stm32f0xx_crs.o
+#SPL_OBJECT+=stm32f0xx_dac.o
+SPL_OBJECT+=stm32f0xx_dbgmcu.o
+SPL_OBJECT+=stm32f0xx_dma.o
+SPL_OBJECT+=stm32f0xx_exti.o
+SPL_OBJECT+=stm32f0xx_flash.o
+SPL_OBJECT+=stm32f0xx_gpio.o
+SPL_OBJECT+=stm32f0xx_i2c.o
+SPL_OBJECT+=stm32f0xx_iwdg.o
+SPL_OBJECT+=stm32f0xx_misc.o
+#SPL_OBJECT+=stm32f0xx_pwr.o
+SPL_OBJECT+=stm32f0xx_rcc.o
+#SPL_OBJECT+=stm32f0xx_rtc.o
+SPL_OBJECT+=stm32f0xx_spi.o
+#SPL_OBJECT+=stm32f0xx_syscfg.o
+SPL_OBJECT+=stm32f0xx_tim.o
+SPL_OBJECT+=stm32f0xx_usart.o
+#SPL_OBJECT+=stm32f0xx_wwdg.o
