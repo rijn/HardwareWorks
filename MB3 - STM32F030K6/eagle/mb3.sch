@@ -9,6 +9,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -2169,6 +2183,59 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <circle x="0" y="0" radius="0.40160625" width="0" layer="29"/>
 <circle x="2.54" y="0" radius="0.40160625" width="0" layer="29"/>
 </package>
+<package name="0603-S">
+<wire x1="-1.223" y1="0.583" x2="1.223" y2="0.583" width="0.0508" layer="39"/>
+<wire x1="1.223" y1="0.583" x2="1.223" y2="-0.583" width="0.0508" layer="39"/>
+<wire x1="1.223" y1="-0.583" x2="-1.223" y2="-0.583" width="0.0508" layer="39"/>
+<wire x1="-1.223" y1="-0.583" x2="-1.223" y2="0.583" width="0.0508" layer="39"/>
+<text x="-0.789" y="0.662" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-0.943" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<polygon width="0.0508" layer="1">
+<vertex x="-0.25" y="0.3"/>
+<vertex x="-0.6" y="0.3" curve="90"/>
+<vertex x="-0.9" y="0" curve="90"/>
+<vertex x="-0.6" y="-0.3"/>
+<vertex x="-0.25" y="-0.3"/>
+</polygon>
+<polygon width="0.0508" layer="29">
+<vertex x="-0.2" y="0.4"/>
+<vertex x="-0.6" y="0.4" curve="90"/>
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="-0.6" y="-0.4"/>
+<vertex x="-0.2" y="-0.4"/>
+</polygon>
+<smd name="1" x="-0.5" y="0" dx="0.1" dy="0.1" layer="1" stop="no" cream="no"/>
+<polygon width="0.0508" layer="1">
+<vertex x="0.25" y="-0.3"/>
+<vertex x="0.6" y="-0.3" curve="90"/>
+<vertex x="0.9" y="0" curve="90"/>
+<vertex x="0.6" y="0.3"/>
+<vertex x="0.25" y="0.3"/>
+</polygon>
+<polygon width="0.0508" layer="29">
+<vertex x="0.2" y="-0.4"/>
+<vertex x="0.6" y="-0.4" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0.6" y="0.4"/>
+<vertex x="0.2" y="0.4"/>
+</polygon>
+<smd name="2" x="0.5" y="0" dx="0.1" dy="0.1" layer="1" rot="R180" stop="no" cream="no"/>
+<wire x1="-0.25" y1="0.25" x2="0.25" y2="0.25" width="0.0508" layer="51"/>
+<wire x1="-0.25" y1="-0.25" x2="0.25" y2="-0.25" width="0.0508" layer="51"/>
+<polygon width="0.0508" layer="51">
+<vertex x="0.25" y="0.25"/>
+<vertex x="0.25" y="-0.25"/>
+<vertex x="0.5" y="-0.25"/>
+<vertex x="0.5" y="0.25"/>
+</polygon>
+<polygon width="0.0508" layer="51">
+<vertex x="-0.25" y="0.25"/>
+<vertex x="-0.5" y="0.25"/>
+<vertex x="-0.5" y="-0.25"/>
+<vertex x="-0.25" y="-0.25"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -2381,6 +2448,15 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </technologies>
 </device>
 <device name="EZ" package="CAP-PTH-SMALLEZ">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="0603-S">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -3702,6 +3778,58 @@ chip</description>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 <rectangle x1="-0.2032" y1="-0.3556" x2="0.2032" y2="0.3556" layer="21"/>
 </package>
+<package name="0402-S">
+<wire x1="-1.223" y1="0.583" x2="1.223" y2="0.583" width="0.0508" layer="39"/>
+<wire x1="1.223" y1="0.583" x2="1.223" y2="-0.583" width="0.0508" layer="39"/>
+<wire x1="1.223" y1="-0.583" x2="-1.223" y2="-0.583" width="0.0508" layer="39"/>
+<wire x1="-1.223" y1="-0.583" x2="-1.223" y2="0.583" width="0.0508" layer="39"/>
+<text x="-0.789" y="0.662" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-0.943" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<polygon width="0.0508" layer="1">
+<vertex x="-0.25" y="0.3"/>
+<vertex x="-0.6" y="0.3" curve="90"/>
+<vertex x="-0.9" y="0" curve="90"/>
+<vertex x="-0.6" y="-0.3"/>
+<vertex x="-0.25" y="-0.3"/>
+</polygon>
+<polygon width="0.0508" layer="29">
+<vertex x="-0.2" y="0.4"/>
+<vertex x="-0.6" y="0.4" curve="90"/>
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="-0.6" y="-0.4"/>
+<vertex x="-0.2" y="-0.4"/>
+</polygon>
+<smd name="1" x="-0.5" y="0" dx="0.1" dy="0.1" layer="1" stop="no" cream="no"/>
+<polygon width="0.0508" layer="1">
+<vertex x="0.25" y="-0.3"/>
+<vertex x="0.6" y="-0.3" curve="90"/>
+<vertex x="0.9" y="0" curve="90"/>
+<vertex x="0.6" y="0.3"/>
+<vertex x="0.25" y="0.3"/>
+</polygon>
+<polygon width="0.0508" layer="29">
+<vertex x="0.2" y="-0.4"/>
+<vertex x="0.6" y="-0.4" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0.6" y="0.4"/>
+<vertex x="0.2" y="0.4"/>
+</polygon>
+<smd name="2" x="0.5" y="0" dx="0.1" dy="0.1" layer="1" rot="R180" stop="no" cream="no"/>
+<wire x1="-0.25" y1="0.25" x2="0.25" y2="0.25" width="0.0508" layer="51"/>
+<wire x1="-0.25" y1="-0.25" x2="0.25" y2="-0.25" width="0.0508" layer="51"/>
+<polygon width="0.0508" layer="51">
+<vertex x="0.25" y="0.25"/>
+<vertex x="0.25" y="-0.25"/>
+<vertex x="0.5" y="-0.25"/>
+<vertex x="0.5" y="0.25"/>
+</polygon>
+<polygon width="0.0508" layer="51">
+<vertex x="-0.25" y="0.25"/>
+<vertex x="-0.5" y="0.25"/>
+<vertex x="-0.5" y="-0.25"/>
+<vertex x="-0.25" y="-0.25"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -3873,6 +4001,15 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </technologies>
 </device>
 <device name="0402" package="0402-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0402-S" package="0402-S">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
