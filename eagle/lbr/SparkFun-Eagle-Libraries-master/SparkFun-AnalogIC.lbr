@@ -3032,6 +3032,46 @@ AIN3</text>
 <text x="-12.7" y="7.62" size="1.27" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="TP4057">
+<pin name="CHRG" x="-10.16" y="2.54" length="short"/>
+<pin name="GND" x="-10.16" y="0" length="short"/>
+<pin name="BAT" x="-10.16" y="-2.54" length="short"/>
+<pin name="PROG" x="10.16" y="2.54" length="short" rot="R180"/>
+<pin name="STDBY" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="VCC" x="10.16" y="-2.54" length="short" rot="R180"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="7.62" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="INA1X9">
+<pin name="VIN+" x="-7.62" y="12.7" length="middle" rot="R270"/>
+<pin name="VIN-" x="7.62" y="12.7" length="middle" rot="R270"/>
+<pin name="V+" x="-15.24" y="-2.54" length="middle"/>
+<pin name="GND" x="0" y="-12.7" length="middle" rot="R90"/>
+<pin name="VOUT" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<text x="15.24" y="-7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="15.24" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MAX4372">
+<pin name="RS-" x="7.62" y="10.16" length="middle" rot="R180"/>
+<pin name="RS+" x="7.62" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND" x="-15.24" y="10.16" length="middle"/>
+<pin name="OUT" x="-15.24" y="2.54" length="middle"/>
+<pin name="VCC" x="-15.24" y="-5.08" length="middle"/>
+<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<text x="-12.7" y="-10.16" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-12.7" y="-12.7" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ACS712">
@@ -4941,6 +4981,67 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TP4057">
+<gates>
+<gate name="G$1" symbol="TP4057" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="BAT" pad="3"/>
+<connect gate="G$1" pin="CHRG" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="PROG" pad="6"/>
+<connect gate="G$1" pin="STDBY" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPA340">
+<description>Single gate rail-to-rail output op-amp. Inputs extend 300mV past rails.</description>
+<gates>
+<gate name="G$1" symbol="OP-AMP+-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="+IN" pad="3"/>
+<connect gate="G$1" pin="-IN" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="V+" pad="5"/>
+<connect gate="G$1" pin="V-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX4372">
+<gates>
+<gate name="G$1" symbol="MAX4372" x="2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="TEUK+T" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+<connect gate="G$1" pin="RS+" pad="4"/>
+<connect gate="G$1" pin="RS-" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="T" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

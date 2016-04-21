@@ -1946,7 +1946,17 @@
 <gate name="G$1" symbol="CS5173" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="SOIC−8">
+<connects>
+<connect gate="G$1" pin="AGND" pad="6"/>
+<connect gate="G$1" pin="FB" pad="2"/>
+<connect gate="G$1" pin="PGND" pad="7"/>
+<connect gate="G$1" pin="SS" pad="4"/>
+<connect gate="G$1" pin="TEST" pad="3"/>
+<connect gate="G$1" pin="VC" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="VSW" pad="8"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

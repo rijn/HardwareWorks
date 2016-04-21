@@ -1,0 +1,85 @@
+#usage "<b>Auto place led martix</b>\n"
+       "<p>"
+       "<author>Author: Rijn</author>"
+
+#require 4.1106;
+
+string prefix   = "DC";
+int    offset   = 7.5;
+int    martix_x = 4;
+int    led_x    = 8;
+int    led_y    = 8;
+int    initial_offset = 7;
+
+string cmd = "SET UNDO_LOG OFF;\nGRID MM;\n"; // advisable for speed reasons
+string h;
+
+string check_single_quote(string s) {
+  int l = strlen(s);
+  if (s[l-1] == '\'') s+="'";
+  return s;
+}
+
+void Move(string name) {
+  int l0 = strlen(prefix);
+  int l  = strlen(name);
+  int i  = 0;
+  int id = 0;
+  for(i = l0; i < l; i++) {
+    id = id * 10 + (name[i] - '0');
+  }
+
+  int martix     = (id - 1) / (led_x * led_y) + 1;
+  int id_in_martix = (id - 1) % (led_x * led_y) + 1;
+  int position_x = (((martix - 1) % martix_x) * led_x + ((id_in_martix - 1) % led_x)) * offset + initial_offset;
+  int position_y = (((martix - 1) / martix_x) * led_y + ((id_in_martix - 1) / led_y)) * offset + initial_offset;
+  sprintf(h, "Move %s (%d %d);\n", name, position_x, position_y);
+  cmd += h;
+  //sprintf(h, "%s_Martix_%d_Id_%d;\n", name, martix, id_in_martix);
+  //cmd += h;
+  return;
+}
+
+int found(string signame) {
+
+  int f = 0;
+  int sig = 0;
+
+  if(strstr(signame, prefix) == 0) {
+    f = 1;
+  }
+
+  return f;
+}
+
+if (board) {
+  board(B) {
+    B.elements(E) {  // smashed texts
+      if(found(E.name)){
+        Move(E.name);
+      }
+    }
+  }
+
+  cmd += "SET UNDO_LOG ON;\nGRID LAST;\n";
+
+  //  EditBox
+  int Result = dlgDialog("Descriptions") {
+    dlgHBoxLayout {
+      dlgVBoxLayout { dlgSpacing(500); }
+      dlgTextEdit(cmd);
+    }
+    dlgHBoxLayout {
+      dlgPushButton("+Execute") dlgAccept();
+      dlgSpacing(100);
+      dlgPushButton("-Cancel") dlgReject();
+      }
+    };
+  if (Result == 0) exit(0);
+  exit(cmd);
+}
+
+else {
+   dlgMessageBox("\n Start this ULP in a Board \n");
+   exit (0);
+}

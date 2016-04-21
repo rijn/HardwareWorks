@@ -1628,11 +1628,14 @@
 <pin name="AGND" x="12.7" y="0" length="middle" rot="R180"/>
 <pin name="PGND" x="12.7" y="2.54" length="middle" rot="R180"/>
 <pin name="VSW" x="12.7" y="5.08" length="middle" rot="R180"/>
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-5.08" x2="9.906" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="9.906" y1="-5.08" x2="10.16" y2="-4.826" width="0.254" layer="94" curve="90"/>
-<wire x1="10.16" y1="-4.826" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="-5.08" x2="8.89" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="8.89" y1="-5.08" x2="10.16" y2="-3.81" width="0.254" layer="94" curve="90"/>
+<wire x1="10.16" y1="-3.81" x2="10.16" y2="6.35" width="0.254" layer="94"/>
+<wire x1="10.16" y1="6.35" x2="8.89" y2="7.62" width="0.254" layer="94" curve="90"/>
+<wire x1="8.89" y1="7.62" x2="-8.89" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="7.62" x2="-10.16" y2="6.35" width="0.254" layer="94" curve="90"/>
+<wire x1="-10.16" y1="6.35" x2="-10.16" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-3.81" x2="-8.89" y2="-5.08" width="0.254" layer="94" curve="90"/>
 <text x="-10.16" y="10.16" size="1.27" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
